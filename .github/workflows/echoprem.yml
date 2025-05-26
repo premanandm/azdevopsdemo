@@ -1,0 +1,9 @@
+name: GitHub Actions Demo ## Workflow Name
+run-name: ${{ github.actor }} is testing out GitHub Actions
+on: [push]
+jobs:
+  hello-world-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello Prem
+        run: echo "Hello Prem"
